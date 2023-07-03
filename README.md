@@ -29,5 +29,5 @@ You must follow the same principles as the first subject.
     * Linking CSS and HTML.
 
  > Authors: 
-    * @tfort
-    * @tdolidze
+    * tfort
+    * tdolidze
