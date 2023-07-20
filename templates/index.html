@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII art web</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bublles">
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:24"></span>
+            <span style="--i:10"></span>
+            <span style="--i:14"></span>
+            <span style="--i:23"></span>
+            <span style="--i:18"></span>
+            <span style="--i:16"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:15"></span>
+            <span style="--i:18"></span>
+            <span style="--i:21"></span>
+            <span style="--i:15"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:17"></span>
+            <span style="--i:13"></span>
+            <span style="--i:28"></span>
+            <span style="--i:33"></span>
+            <span style="--i:36"></span>
+        </div>
+    </div>
+    <h1>ASCII ART WEB<br>STYLIZE</h1>
+    <form method="POST" action="/asciiart">
+        <label for="input" name="input" id="input">Veuillez entrer les textes ci-dessous</label><br>
+        <textarea name="text" id="text" placeholder="caractères ASCII uniquement"></textarea><br>
+        <label for="fonts">Choisis ta police</label><br>
+        
+        <div>
+            <select class="selector" name="fonts">
+                <option value="shadow">Shadow</option>
+                <option selected value="standard">Standard</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+        </div>
+       
+        <div>
+            <input type="submit" value="Générer" id="submit">
+        </div> 
+
+        <!-- <dl>
+            Ton résultat sera téléchargé dans ton repository<br>
+            dans les fichiers "download.doc" & "download.txt"
+        </dl> -->
+      
+        <div id="output"> 
+            <pre>{{.}}</pre>
+            
+        </div>
+        
+    </form>
+   
+</body>
+
+</html>
