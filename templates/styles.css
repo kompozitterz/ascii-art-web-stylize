@@ -1,0 +1,134 @@
+* 
+{
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;  
+}
+
+body
+{
+    font-family: 'Sedgwick Ave Display', cursive;
+    min-height: 100vh;
+    background-color: black;
+    text-align: center;
+    touch-action: pan-x pinch-zoom;
+}
+
+
+pre {
+    color: #c21451;
+}
+
+label{
+    font-size: 50px;
+    color: #c21451;
+}
+
+.output{
+    width: 150px;
+    height: 300px;
+    resize: none;
+}
+
+/* .name {
+    text-align: center;
+    width: 100px;
+    height: 60px;
+} */
+
+.id {
+    margin: 15;
+    width: 150px;
+    height: 300px;
+    text-align: center;
+}
+
+dl{
+    font-size: 25px;
+    color: #c21451;
+}
+
+h1{
+    font-size: 35px;
+    color: #c21451;
+}
+
+#submit {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 75px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 8px; 
+    text-align: center; 
+    justify-content: center;
+}
+
+#submit:hover {
+    background-color: #c21451;
+    color: white;
+  }
+
+  .selector {
+    font-size: 12.5px;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+.selector:hover{
+    background-color: #c21451;
+    color: white;
+
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.bublles
+{
+    position: relative;
+    display: flex; 
+}
+
+.bublles span
+{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #ff2d75;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #4fc3dC44,
+    0 0 50px #d8b620, 
+    0 0 100px #d8b620; 
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 5px #4fc3dC44,
+    0 0 50px #4fc3dc, 
+    0 0 100px #4fc3dc; 
+    animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
