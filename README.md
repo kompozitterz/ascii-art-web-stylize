@@ -1,5 +1,7 @@
 **ASCII ART WEB STYLIZE**
 
+![Mon image](assets/img/port_img2.jpg)
+
 > Objectives
 
 You must follow the same principles as the first subject.
